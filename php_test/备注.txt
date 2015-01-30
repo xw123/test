@@ -1,0 +1,22 @@
+﻿修改数据库用户密码
+1. 进入：
+D:/wamp/bin/mysql/mysql5.1.32/bin
+使用命令 mysql stop 停止服务。
+2. 用以下命令启动MySQL，以不检查权限的方式启动； （这个处于停滞状态表示成功了）
+mysqld --skip-grant-tables &
+3. 然后开启一个新的窗口用空密码方式使用root用户登录 MySQL； 
+mysql -u root
+4. 修改root用户的密码； 
+mysql> update mysql.user set password=PASSWORD('yourpassword') where User='root'; 
+mysql> flush privileges; 
+mysql> quit 
+重新启动MySQL
+mysql restart
+
+
+学习笔记：
+1     include_once 'conn.php';
+ include_once 语句在脚本执行期间包含并运行指定文件。此行为和 include 语句类似，唯一区别是如果该文件中已经被包含过，则不会再次包含。如同此语句名字暗示的那样，只会包含一次。
+include_once 可以用于在脚本执行期间同一个文件有可能被包含超过一次的情况下，想确保它只被包含一次以避免函数重定义，变量重新赋值等问题。
+ 
+2     isset： 检测变量是否设置
