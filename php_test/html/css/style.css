@@ -44,7 +44,7 @@ body{ background-color: #f2395b; }
 .activeInfo ul li a { display: block; height: 68px; }
 .activeInfo dl { margin: 15px 0 0 275px; }
 .infoList dt { float: left; clear: left; padding-left: 25px; background: url(../images/arrow.png) no-repeat 0 50%; }
-.infoList dt, .infoList dd { font-size: 18px; line-height: 30px; color: #d2244a; }
+.infoList dt, .infoList dd { font-size: 18px; line-height: 30px; color: #000000; }
 .active01 { background: url(../images/gift_01.jpg) no-repeat 0 0; }
 .active01 h2, .active02 h2 { height: 125px; text-indent: -999em; overflow: hidden; }
 .active01 .part01 { padding-left: 395px; height: 199px; }
